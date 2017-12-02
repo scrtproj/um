@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+body {
+  background: #837fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+body .patternFlow {
+  width: 100vw;
+  left: 0;
+  height: 100vh;
+  position: absolute;
+  background-image: url("http://frolovoleg.ru/images/curveOneWhite.svg");
+  -webkit-animation: bgAnimeOne 7s linear infinite;
+          animation: bgAnimeOne 7s linear infinite;
+  -webkit-transition: opacity 0.1s ease;
+  transition: opacity 0.1s ease;
+}
+body .main {
+  width: 328px;
+  height: 440px;
+}
+body .main .shadowBox {
+  position: absolute;
+  background: #383592;
+  width: 268px;
+  height: 418px;
+  top: 50%;
+  left: 50%;
+  margin-top: -180px;
+  margin-left: -134px;
+  border-radius: 16px;
+  filter: blur(50px);
+  -webkit-filter: blur(50px);
+}
+body .main .container {
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -220px;
+  margin-left: -164px;
+  height: 440px;
+  width: 328px;
+  border-radius: 16px;
+  z-index: 1;
+}
+body .main .container .title {
+  font-size: 18px;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 30px;
+  letter-spacing: 3px;
+  color: #837fff;
+  font-family: "Lato", sans-serif;
+  font-weight: bolder;
+}
+body .main .container .patternPreview {
+  width: 328px;
+  height: 200px;
+  background: url("http://frolovoleg.ru/images/curves.svg");
+  margin-top: 44px;
+}
+body .main .container .containerForButtons {
+  width: 264px;
+  height: 72px;
+  margin-left: 32px;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body .main .container .containerForButtons .buttonOne:hover,
+body .main .container .containerForButtons .buttonTwo:hover,
+body .main .container .containerForButtons .buttonThree:hover {
+  cursor: pointer;
+}
+body .main .container .containerForButtons .buttonOne {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #837fff;
+  background-image: url("http://frolovoleg.ru/images/curveOneWhite.svg");
+  background-size: 60%;
+  background-position: 17px 14px;
+  background-repeat: no-repeat;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+body .main .container .containerForButtons .buttonTwo {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: transparent;
+  margin-left: 24px;
+  background-image: url("http://frolovoleg.ru/images/curveTwo.svg");
+  background-size: 60%;
+  background-position: 14px 14px;
+  background-repeat: no-repeat;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+body .main .container .containerForButtons .buttonThree {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: transparent;
+  margin-left: 24px;
+  background-image: url("http://frolovoleg.ru/images/curveThree.svg");
+  background-size: 60%;
+  background-position: 14px 14px;
+  background-repeat: no-repeat;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+@-webkit-keyframes bgAnimeOne {
+  0% {
+    background-position-x: -100px;
+    background-position-y: 100px;
+  }
+  100% {
+    background-position-x: 100px;
+    background-position-y: -100px;
+  }
+}
+@keyframes bgAnimeOne {
+  0% {
+    background-position-x: -100px;
+    background-position-y: 100px;
+  }
+  100% {
+    background-position-x: 100px;
+    background-position-y: -100px;
+  }
+}
+@-webkit-keyframes bgAnimeTwo {
+  0% {
+    background-position-x: 100px;
+    background-position-y: 100px;
+  }
+  100% {
+    background-position-x: -100px;
+    background-position-y: -100px;
+  }
+}
+@keyframes bgAnimeTwo {
+  0% {
+    background-position-x: 100px;
+    background-position-y: 100px;
+  }
+  100% {
+    background-position-x: -100px;
+    background-position-y: -100px;
+  }
+}
+@-webkit-keyframes bgAnimeThree {
+  0% {
+    background-position-x: 100px;
+    background-position-y: -100px;
+  }
+  100% {
+    background-position-x: -100px;
+    background-position-y: 100px;
+  }
+}
+@keyframes bgAnimeThree {
+  0% {
+    background-position-x: 100px;
+    background-position-y: -100px;
+  }
+  100% {
+    background-position-x: -100px;
+    background-position-y: 100px;
+  }
+}
+@-webkit-keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
